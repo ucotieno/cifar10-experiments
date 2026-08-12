@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>CIFAR-10 Inference</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>CIFAR-10 Inference</h1>
+
+        <div class="actions">
+            <label class="button">
+                Choose Photo
+                <input
+                    id="file-input"
+                    type="file"
+                    accept="image/*"
+                    hidden
+                >
+            </label>
+        </div>
+
+        <div id="preview-container" class="preview-container hidden">
+            <img id="preview" alt="Selected image">
+        </div>
+
+        <button id="predict-button" class="predict-button" disabled>
+            Run Inference
+        </button>
+
+        <div id="status" class="status"></div>
+
+        <section id="result" class="result hidden">
+            <h2>Prediction</h2>
+            <p id="prediction"></p>
+            <p id="confidence"></p>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

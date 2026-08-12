@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.button,
+.predict-button {
+    border: 0;
+    border-radius: 6px;
+    padding: 9px 14px;
+    font-size: 14px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    background: #222;
+    color: white;
+}
+
+.button:hover {
+    background: #444;
+}
+
+.preview-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.preview-container img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: white;
+}
+
+.predict-button {
+    display: block;
+    width: auto;
+    min-width: 120px;
+    margin: 0 auto;
+    background: #1769aa;
+    color: white;
+}
+
+.predict-button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.status {
+    min-height: 20px;
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.result {
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 6px;
+    background: white;
+    text-align: center;
+}
+
+.result h2 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+#prediction {
+    margin: 6px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#confidence {
+    margin: 0;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
